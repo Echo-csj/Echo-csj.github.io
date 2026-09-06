@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>状元港 · 泉山校区 · 工作台入口</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#4F46E5">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css?v=20260906a">
+</head>
+<body>
+  <main class="portal">
+    <div class="portal-bg" aria-hidden="true"></div>
+
+    <header class="portal-header">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-eyebrow">ECHO-CSJ · WORKBENCH PORTAL</div>
+          <h1 class="brand-title">状元港 · 泉山校区</h1>
+        </div>
+      </div>
+      <p class="brand-sub">教学运营与协作系统入口 · 请选择需要进入的工作台</p>
+    </header>
+
+    <section class="cards">
+      <a class="card card-primary" href="https://echo-csj.github.io/quanshan-dos-workbench/">
+        <div class="card-tag">推荐 · 当前活跃</div>
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/>
+            <path d="M16 3.13a4 4 0 010 7.75"/><path d="M21 21v-2a4 4 0 00-3-3.87"/>
+          </svg>
+        </div>
+        <h2 class="card-title">团队协作工作台</h2>
+        <p class="card-desc">面向教务管理者的多角色协作系统：教学资源、学生信息、学生成长监测、团队协作四大模块，支持跨成员共享数据。</p>
+        <ul class="card-meta">
+          <li><span class="dot dot-on"></span> 已部署</li>
+          <li>·  Supabase + GitHub Pages</li>
+        </ul>
+        <div class="card-action">
+          <span>进入工作台</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+
+      <a class="card card-secondary" href="https://echo-csj.github.io/campus-analytics/">
+        <div class="card-tag card-tag-muted">历史 · 教学运营</div>
+        <div class="card-icon card-icon-muted" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-6"/>
+          </svg>
+        </div>
+        <h2 class="card-title">教学运营工作台</h2>
+        <p class="card-desc">核心看板 / 最佳科组 / 科组生产指标 / 教师 KPI / 科组生产预测 / 数据源管理。本地优先存储 + GitHub Pages 部署。</p>
+        <ul class="card-meta">
+          <li><span class="dot dot-on"></span> 已部署</li>
+          <li>·  本地存储 + GitHub Pages</li>
+        </ul>
+        <div class="card-action">
+          <span>进入工作台</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </div>
+      </a>
+    </section>
+
+    <footer class="portal-footer">
+      <span>© 状元港 · 泉山校区</span>
+      <span class="footer-sep">·</span>
+      <span>ECHO-CSJ Workbench Portal v1.0</span>
+      <span class="footer-sep">·</span>
+      <span>部署于 GitHub Pages</span>
+    </footer>
+  </main>
+
+  <script>
+    // 入场动画：移除初始隐藏
+    document.documentElement.classList.add('hydrated');
+  </script>
+</body>
+</html>
